@@ -1,6 +1,6 @@
 # Transmic Space: Master Audiovisual & Publishing Repertoire Dossier
 **Canonical Documentation for Transmic Space Production Banner & Publishing Entity**  
-**Document Code:** `TRANSMIC_DOC_MasterCatalogDossier_v1.0_20260924_FINAL.md`  
+**Document Code:** `TRANSMIC_DOC_MasterCatalogDossier_v1.1_20260924_FINAL.md`  
 **Status:** `FINAL` | **Date:** 2026-09-24  
 **Author:** Transmic Space & Abhikism Orchestrator  
 
@@ -126,7 +126,7 @@ Transmic Space holds a statutory **50.00% Publishing Share (`E - 01350235979`)**
 ## 6. Asset Architecture & File Governance
 
 Per strict user directive, **all original master cover artwork remains securely anchored in `PROJECTS/ABHIKISM/`**. Transmic Space hosts all derivative, promotional, branding, and video visual assets:
-- **`03_ASSETS/03_IMAGES/Channel_Branding/`**: 4K Channel Banner (`4032px`), Master Logo (`1440px`), Transparent, White, and Black vector-clean logos.
+- **`03_ASSETS/03_IMAGES/Channel_Branding/`**: 4K Channel Banner (`4032px`), Master Logo (`1440px`), Ultra-lightweight 2× Retina WebP Avatar (`13.5KB`), 64px Favicon (`7KB`), Pure Vector SVG Logo Mark (`39KB`), and Transparent, White, and Black brand emblems.
 - **`03_ASSETS/03_IMAGES/Taar_Kata_Ektara/`**: Promotional posters (*Crimson Noir Master*, *Silver Mist Edition*, *Minimalist A24 Edition*), YouTube thumbnails, typography overlays, colonnade silhouettes, and video production stills.
 - **`03_ASSETS/03_IMAGES/Thumbnails/`**: High-resolution thumbnails for all 16 official YouTube video releases.
 - **`04_LINKTREE/`**: Standalone, responsive Linktree web application for global audience engagement and GitHub Pages hosting.
