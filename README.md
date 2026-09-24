@@ -12,7 +12,7 @@
 
 ## 🌟 Overview
 
-**Transmic Space** is an independent boutique creative label, audiovisual production space, and registered music publishing entity (`E - 01350235979`). Operating at the nexus of contemporary Bengali songwriting, urban-folk synthesis, independent cinema, and episodic web series, Transmic Space is the primary visual and publishing home for groundbreaking collaborative productions.
+**Transmic Space** is an independent creative collective — **A Lab for Magic** — operating across folk fusion, independent cinema, music videos, and performance events, and a registered music publishing entity (`E - 01350235979`). Operating at the nexus of contemporary Bengali songwriting, urban-folk synthesis, independent cinema, and live performance, Transmic Space is the primary visual and publishing home for groundbreaking collaborative productions.
 
 This repository serves as both the **authoritative database** of all Transmic Space productions and publishing repertoire, and the **live host of the responsive Linktree / Catalog Hub** deployed via GitHub Pages.
 
@@ -27,6 +27,8 @@ transmic-space/
 ├── app.js                              # Dynamic Catalog & Modal Application Logic
 ├── catalog_data.js                      # Inlined Master JSON for Standalone Local/Web Play
 ├── README.md                            # Repository Documentation & Overview
+├── taar-kata-ektara/                    # Dedicated Single-Release Page for Taar Kata Ektara
+│   └── index.html
 │
 ├── 01_DATABASE/                         # Master Machine-Readable Databases
 │   ├── transmic_space_catalog.json      # Complete Unified Catalog & Asset Database

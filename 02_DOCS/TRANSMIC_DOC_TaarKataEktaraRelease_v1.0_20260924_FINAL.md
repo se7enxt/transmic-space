@@ -14,7 +14,7 @@
 - **Featured Vocalist:** Sreemoyee Bhattacharya
 - **Rap Verse & Spoken Delivery:** Abhik Chatterjee (`#abhikism`)
 - **Composer, Lyricist & Music Producer:** Abhik Chatterjee
-- **Publishing & Production Banner:** A Transmic Video / Transmic Space
+- **Publishing & Production Banner:** Transmic Space — A Lab for Magic (A Transmic Video)
 
 ### Core Release Identifiers
 - **Canonical Release Genesis Date:** `2019-08-16`

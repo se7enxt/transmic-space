@@ -8,7 +8,7 @@
 
 ## 1. Executive Summary & Brand Identity
 
-**Transmic Space** is an independent boutique creative label, audiovisual production space, and legal music publishing entity. Operating at the intersection of contemporary Bengali songwriting, urban-folk synthesis, independent cinema, and episodic web series, Transmic Space serves as the primary visual and publishing home for groundbreaking collaborative works.
+**Transmic Space** is an independent creative collective — **A Lab for Magic** — operating across folk fusion, independent cinema, music videos, and performance events, and a legal music publishing entity. Operating at the intersection of contemporary Bengali songwriting, urban-folk synthesis, independent cinema, episodic web series, and performance events, Transmic Space serves as the primary visual, live performance, and publishing home for groundbreaking collaborative works.
 
 ### Key Organizational Identifiers
 - **Entity Name:** Transmic Space

@@ -1,8 +1,8 @@
-# Transmic Space: Audiovisual Filmography & Publishing Repertoire Catalog
-**Complete Reference Catalog of Films, Web Series, Music Videos, and Statutory Works**  
+# Transmic Space: A Lab for Magic — Audiovisual Filmography & Publishing Repertoire Catalog
+**Complete Reference Catalog of Films, Web Series, Music Videos, Performance Events, and Statutory Works**  
 **Document Code:** `TRANSMIC_DOC_RepertoireCatalog_v1.0_20260924_FINAL.md`  
 **Status:** `FINAL` | **Date:** 2026-09-24  
-**Entity:** Transmic Space (`E - 01350235979`)  
+**Entity:** Transmic Space — A Lab for Magic (`E - 01350235979`)  
 
 ---
 

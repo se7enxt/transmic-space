@@ -8,7 +8,7 @@ window.TRANSMIC_CATALOG = {
     "statutory_role": "Original Publisher / Production Banner",
     "statutory_publishing_share": "50.00%",
     "associated_creator": "Abhik Chatterjee (#ABHIKISM, IPI 01350235881)",
-    "description": "Boutique Creative Label & Audiovisual Production Space founded to pioneer Bengali contemporary folk fusion, cinematic narrative storytelling, and independent web series."
+    "description": "A Lab for Magic • Folk Fusion • Independent Cinema • Music Videos • Performance Events"
   },
   "flagship_release": {
     "title": "Taar Kata Ektara",
