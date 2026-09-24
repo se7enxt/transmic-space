@@ -735,9 +735,12 @@ window.TRANSMIC_CATALOG = {
   ],
   "assets_inventory": {
     "channel_branding_files": [
+      "favicon.png",
       "transmic_space_banner.jpg",
       "transmic_space_logo.png",
+      "transmic_space_logo.webp",
       "transmic_space_logo_black.png",
+      "transmic_space_logo_mark.svg",
       "transmic_space_logo_master.png",
       "transmic_space_logo_transparent.png",
       "transmic_space_logo_white.png",
