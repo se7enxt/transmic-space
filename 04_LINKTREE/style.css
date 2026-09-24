@@ -353,14 +353,59 @@ body {
   flex-direction: column;
 }
 
-@media (min-width: 900px) {
-  .spotlight-card {
+/* Horizontal format: Video on TOP (full width for maximum screen space), Info BELOW */
+.spotlight-card.horizontal {
+  flex-direction: column;
+}
+
+.spotlight-card.horizontal .spotlight-video-pane {
+  width: 100%;
+  flex: none;
+  background: #000;
+}
+
+.spotlight-card.horizontal .video-embed-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+}
+
+.spotlight-card.horizontal .spotlight-content {
+  width: 100%;
+  padding: 1.75rem;
+}
+
+/* Vertical format: Side-by-side on desktop, stacked on mobile */
+.spotlight-card.vertical {
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .spotlight-card.vertical {
     flex-direction: row;
+  }
+
+  .spotlight-card.vertical .spotlight-video-pane {
+    flex: 0 0 380px;
+    max-width: 42%;
+    background: #000;
+  }
+
+  .spotlight-card.vertical .video-embed-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 177.78%; /* 9:16 Vertical Video */
+    height: 0;
+  }
+
+  .spotlight-card.vertical .spotlight-content {
+    flex: 1 1 58%;
+    padding: 1.75rem;
   }
 }
 
 .spotlight-video-pane {
-  flex: 1 1 50%;
   background: #000;
   display: flex;
   align-items: center;
@@ -369,7 +414,7 @@ body {
 .video-embed-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  padding-bottom: 56.25%;
   height: 0;
 }
 

@@ -94,6 +94,12 @@ function renderReleases() {
       }
     }
 
+    // If Taar Kata Ektara, provide direct link to dedicated page
+    let dedicatedBtn = '';
+    if (item.id === '_PXjXY4ZAB8') {
+      dedicatedBtn = `<a href="./taar-kata-ektara/" class="card-btn" style="border-color: rgba(139,92,246,0.5); color: #c4b5fd;">Page ↗</a>`;
+    }
+
     card.innerHTML = `
       <div class="card-thumb-wrap" onclick="openVideoModal('${item.id}', '${escapeHtml(item.title)}')">
         <img src="${thumbPath}" alt="${escapeHtml(item.title)}" class="card-thumb" loading="lazy" onerror="this.src='https://img.youtube.com/vi/${item.id}/hqdefault.jpg'">
@@ -122,6 +128,7 @@ function renderReleases() {
           <a href="${item.youtube_url}" target="_blank" rel="noopener" class="card-btn" title="Open in YouTube">
             YouTube ↗
           </a>
+          ${dedicatedBtn}
           ${dspButtons}
         </div>
       </div>
@@ -131,72 +138,16 @@ function renderReleases() {
   });
 }
 
-function renderRepertoireView(container, works) {
-  const filtered = works.filter(w => {
-    return !searchQuery ||
-      w.title.toLowerCase().includes(searchQuery) ||
-      w.work_id.toLowerCase().includes(searchQuery) ||
-      w.language.toLowerCase().includes(searchQuery) ||
-      (w.collaborators && w.collaborators.toLowerCase().includes(searchQuery));
-  });
-
-  const list = document.createElement('div');
-  list.className = 'repertoire-list';
-
-  filtered.forEach(w => {
-    const row = document.createElement('div');
-    row.className = 'work-row';
-    row.innerHTML = `
-      <div class="work-main">
-        <span class="work-id-pill">${w.work_id}</span>
-        <div>
-          <h4 class="work-title-text">${w.title}</h4>
-          <span class="work-sub">${w.type} • ${w.language} • Rel: ${w.genesis_date || 'Catalog Master'} • IPRS: ${w.iprs_work_no || 'Registered'}</span>
-        </div>
-      </div>
-      <div class="work-meta">
-        <span class="share-pill">50% Transmic Space (E)</span>
-        <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(w.title + ' Abhikism')}" target="_blank" rel="noopener" class="card-btn">Search ↗</a>
-      </div>
-    `;
-    list.appendChild(row);
-  });
-
-  container.appendChild(list);
-}
-
 function resetSearch() {
   document.getElementById('searchInput').value = '';
   searchQuery = '';
   renderReleases();
 }
 
-function toggleLyrics() {
-  const drawer = document.getElementById('lyrics-drawer');
-  const btn = document.getElementById('btn-toggle-lyrics');
-  const isOpen = drawer.classList.contains('open');
-  
-  // Close gallery if open
-  document.getElementById('gallery-drawer').classList.remove('open');
-  document.getElementById('btn-toggle-gallery').classList.remove('active');
-
-  if (isOpen) {
-    drawer.classList.remove('open');
-    btn.classList.remove('active');
-  } else {
-    drawer.classList.add('open');
-    btn.classList.add('active');
-  }
-}
-
 function toggleGallery() {
   const drawer = document.getElementById('gallery-drawer');
   const btn = document.getElementById('btn-toggle-gallery');
   const isOpen = drawer.classList.contains('open');
-  
-  // Close lyrics if open
-  document.getElementById('lyrics-drawer').classList.remove('open');
-  document.getElementById('btn-toggle-lyrics').classList.remove('active');
 
   if (isOpen) {
     drawer.classList.remove('open');
