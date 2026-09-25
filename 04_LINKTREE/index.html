@@ -14,6 +14,11 @@
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="./03_ASSETS/03_IMAGES/Channel_Branding/favicon.png">
+
+  <!-- Performance Preload & Preconnect -->
+  <link rel="preload" as="image" href="./03_ASSETS/03_IMAGES/Channel_Branding/transmic_space_banner.webp" type="image/webp">
+  <link rel="dns-prefetch" href="https://www.youtube.com">
+  <link rel="preconnect" href="https://www.youtube.com" crossorigin>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +38,10 @@
     <!-- Top Channel Banner -->
     <header class="channel-header">
       <div class="banner-container">
-        <img src="./03_ASSETS/03_IMAGES/Channel_Branding/transmic_space_banner.jpg" alt="Transmic Space Channel Banner" class="banner-img">
+        <picture>
+          <source srcset="./03_ASSETS/03_IMAGES/Channel_Branding/transmic_space_banner.webp" type="image/webp">
+          <img src="./03_ASSETS/03_IMAGES/Channel_Branding/transmic_space_banner.jpg" alt="Transmic Space Channel Banner" class="banner-img" width="1920" height="1080" fetchpriority="high">
+        </picture>
         <div class="banner-overlay"></div>
       </div>
       
@@ -90,14 +98,15 @@
       
       <div class="spotlight-card horizontal">
         <div class="spotlight-video-pane">
-          <div class="video-embed-wrapper">
-            <iframe 
-              src="https://www.youtube.com/embed/_PXjXY4ZAB8?enablejsapi=1&origin=https://se7enxt.github.io" 
-              title="Taar Kata Ektara Official Video" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
+          <div class="video-embed-wrapper lite-youtube-facade" id="spotlightFacade" onclick="loadSpotlightPlayer('_PXjXY4ZAB8')" onkeydown="if(event.key==='Enter'||event.key===' ')loadSpotlightPlayer('_PXjXY4ZAB8')" role="button" tabindex="0" aria-label="Play Taar Kata Ektara official 4K music video">
+            <img src="./03_ASSETS/03_IMAGES/Thumbnails/10__PXjXY4ZAB8_Taar_Kata_Ektara__তর_কট_একতর.webp" alt="Taar Kata Ektara Video Preview" class="facade-poster" width="854" height="480">
+            <div class="facade-play-btn" aria-hidden="true">
+              <svg viewBox="0 0 68 48" width="68" height="48">
+                <path class="play-bg" d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/>
+                <path d="M45 24L27 14v20" fill="#ffffff"/>
+              </svg>
+            </div>
+            <span class="facade-badge">Click to Play 4K Video</span>
           </div>
         </div>
         
@@ -167,15 +176,15 @@
           <div class="drawer-content" id="gallery-drawer">
             <div class="posters-grid">
               <div class="poster-item">
-                <img src="./03_ASSETS/03_IMAGES/Taar_Kata_Ektara/poster_crimson_noir.png" alt="Crimson Noir Master Edition" onclick="openLightbox(this.src)">
+                <img src="./03_ASSETS/03_IMAGES/Taar_Kata_Ektara/poster_crimson_noir.webp" alt="Crimson Noir Master Edition" onclick="openLightbox(this.src)" loading="lazy" width="800" height="1000">
                 <span>Crimson Noir Master</span>
               </div>
               <div class="poster-item">
-                <img src="./03_ASSETS/03_IMAGES/Taar_Kata_Ektara/poster_silver_mist.png" alt="Silver Mist Edition" onclick="openLightbox(this.src)">
+                <img src="./03_ASSETS/03_IMAGES/Taar_Kata_Ektara/poster_silver_mist.webp" alt="Silver Mist Edition" onclick="openLightbox(this.src)" loading="lazy" width="800" height="1000">
                 <span>Silver Mist Edition</span>
               </div>
               <div class="poster-item">
-                <img src="./03_ASSETS/03_IMAGES/Taar_Kata_Ektara/poster_minimalist_a24.png" alt="Minimalist A24 Edition" onclick="openLightbox(this.src)">
+                <img src="./03_ASSETS/03_IMAGES/Taar_Kata_Ektara/poster_minimalist_a24.webp" alt="Minimalist A24 Edition" onclick="openLightbox(this.src)" loading="lazy" width="800" height="1000">
                 <span>Minimalist A24 Edition</span>
               </div>
             </div>
@@ -202,9 +211,40 @@
         </div>
       </div>
 
-      <!-- Video Grid Container -->
+      <!-- Video Grid Container with Instant Skeleton Placeholders -->
       <div class="cards-grid" id="releasesGrid">
-        <!-- Rendered via JavaScript -->
+        <article class="release-card skeleton-card">
+          <div class="card-thumb-wrap skeleton-box"></div>
+          <div class="card-body">
+            <div class="skeleton-line skeleton-date"></div>
+            <div class="skeleton-line skeleton-title"></div>
+            <div class="skeleton-line skeleton-artist"></div>
+          </div>
+        </article>
+        <article class="release-card skeleton-card">
+          <div class="card-thumb-wrap skeleton-box"></div>
+          <div class="card-body">
+            <div class="skeleton-line skeleton-date"></div>
+            <div class="skeleton-line skeleton-title"></div>
+            <div class="skeleton-line skeleton-artist"></div>
+          </div>
+        </article>
+        <article class="release-card skeleton-card">
+          <div class="card-thumb-wrap skeleton-box"></div>
+          <div class="card-body">
+            <div class="skeleton-line skeleton-date"></div>
+            <div class="skeleton-line skeleton-title"></div>
+            <div class="skeleton-line skeleton-artist"></div>
+          </div>
+        </article>
+        <article class="release-card skeleton-card">
+          <div class="card-thumb-wrap skeleton-box"></div>
+          <div class="card-body">
+            <div class="skeleton-line skeleton-date"></div>
+            <div class="skeleton-line skeleton-title"></div>
+            <div class="skeleton-line skeleton-artist"></div>
+          </div>
+        </article>
       </div>
     </main>
 

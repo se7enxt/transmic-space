@@ -78,10 +78,15 @@ function renderReleases() {
     const card = document.createElement('article');
     card.className = 'release-card';
     
-    // Thumbnail resolution path
-    const thumbPath = item.thumbnail_file 
-      ? `./03_ASSETS/03_IMAGES/Thumbnails/${item.thumbnail_file}` 
-      : `https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`;
+    // Thumbnail resolution path (prefer lightweight WebP, fallback to JPG)
+    const baseThumb = item.thumbnail_file || '';
+    const webpThumb = baseThumb ? baseThumb.replace(/\.jpg$/i, '.webp') : null;
+    const thumbPath = webpThumb 
+      ? `./03_ASSETS/03_IMAGES/Thumbnails/${webpThumb}` 
+      : `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`;
+    const fallbackJpg = baseThumb 
+      ? `./03_ASSETS/03_IMAGES/Thumbnails/${baseThumb}` 
+      : `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`;
 
     // DSP button html if available
     let dspButtons = '';
@@ -102,7 +107,7 @@ function renderReleases() {
 
     card.innerHTML = `
       <div class="card-thumb-wrap" onclick="openVideoModal('${item.id}', '${escapeHtml(item.title)}')">
-        <img src="${thumbPath}" alt="${escapeHtml(item.title)}" class="card-thumb" loading="lazy" onerror="this.src='https://img.youtube.com/vi/${item.id}/hqdefault.jpg'">
+        <img src="${thumbPath}" alt="${escapeHtml(item.title)}" class="card-thumb" loading="lazy" width="854" height="480" onerror="if(this.src.endsWith('.webp')){this.src='${fallbackJpg}';}else{this.src='https://img.youtube.com/vi/${item.id}/hqdefault.jpg';}">
         <div class="play-overlay">
           <div class="play-circle">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
@@ -218,3 +223,22 @@ function escapeHtml(str) {
   if (!str) return '';
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
+
+/**
+ * Lite YouTube Facade: Loads real iframe only when clicked
+ */
+function loadSpotlightPlayer(videoId) {
+  const container = document.getElementById('spotlightFacade');
+  if (!container) return;
+  container.innerHTML = `
+    <iframe 
+      src="https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0&origin=https://se7enxt.github.io" 
+      title="Taar Kata Ektara Official Video" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
+  `;
+  container.classList.add('playing');
+}
+
