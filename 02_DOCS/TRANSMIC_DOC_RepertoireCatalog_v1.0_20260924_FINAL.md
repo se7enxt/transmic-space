@@ -92,7 +92,7 @@
 | `WKS-007` | Taar Kata Ektara | VOCAL | BENGALI | 2019-08-16 | `35410376` | ABHIK (50%) \| TRANSMIC SPACE (50%) |
 | `WKS-008` | Lahaan Pan | VOCAL | MARATHI | 2020-03-07 | `35410658` | ABHIK (50%) \| TRANSMIC SPACE (50%) |
 | `WKS-009` | Hey Bhoboghurey | VOCAL | BENGALI | 2020-04-14 | `35410377` | ABHIK (50%) \| TRANSMIC SPACE (50%) |
-| `WKS-010` | Ohonkaar | VOCAL | BENGALI | 2020-04-28 | `35410706` | ABHIK (25%) \| ARGHA (25%) \| TRANSMIC SPACE (50%) |
+| `WKS-010` | Ohonkaar *(Released by Argha Sen feat. #ABHIKISM; Dual Composition — Sung Tune & Lyrics: Argha Sen; Rap & Production: #ABHIKISM)* | VOCAL | BENGALI | 2020-04-28 | `35410706` | ARGHA SEN (25% CA) \| ABHIK (25% Rap/Prod) \| TRANSMIC SPACE (50%) |
 | `WKS-011` | Cohen's Hollow | INST | ENGLISH | 2020-05-25 | `35410379` | ABHIK (50%) \| TRANSMIC SPACE (50%) |
 | `WKS-012` | 396hz - Relieving Grief | INST | ENGLISH | 2020-09-30 | `35410381` | ABHIK (50%) \| TRANSMIC SPACE (50%) |
 | `WKS-013` | 852hz - Awakening Intuition | INST | ENGLISH | 2020-09-30 | `35410382` | ABHIK (50%) \| TRANSMIC SPACE (50%) |

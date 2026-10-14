@@ -388,8 +388,8 @@ window.TRANSMIC_CATALOG = {
       "tier": "Tier B: Collaboration",
       "genesis_date": "",
       "iprs_work_no": "",
-      "shares_breakdown": "ABHIK CHATTERJEE (CA) 25.00% | ARGHA SEN (A) 25.00% | TRANSMIC SPACE (E) 50.00%",
-      "collaborators": "N/A"
+      "shares_breakdown": "ARGHA SEN (CA - Primary Composer & Lyricist) 25.00% | ABHIK CHATTERJEE (A - Rap & Music Producer, Featured Artist) 25.00% | TRANSMIC SPACE (E) 50.00%",
+      "collaborators": "Released by Argha Sen (feat. #ABHIKISM). Dual composition: sung tune & lyrics by Argha Sen; rap verse & production by #ABHIKISM."
     },
     {
       "work_id": "WKS-011",

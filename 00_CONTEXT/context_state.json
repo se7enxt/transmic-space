@@ -25,6 +25,23 @@
     "statutory_publishing_share": "50.00%",
     "associated_creator": "Abhik Chatterjee (#ABHIKISM, IPI 01350235881, IPRS 9856510)",
     "primary_collaborative_vocalist": "Sreemoyee Bhattacharya",
+    "grounding_character_sheets_sreemoyee": [
+      {
+        "id": "SHEET-01",
+        "url": "https://flow.google.com/project/a0fcb289-e3d1-4393-a212-fcdec03cf902/edit/cc8c459a-425d-4b0a-9b1d-f98c4cdefe6d",
+        "description": "Studio turnaround in charcoal tank top and black trousers, frontal portrait with natural dark curly bangs, hooded dark brown almond eyes, soft arched brows, rounded nose tip, and crimson lip profile."
+      },
+      {
+        "id": "SHEET-02",
+        "url": "https://flow.google.com/project/a0fcb289-e3d1-4393-a212-fcdec03cf902/edit/8757d660-195b-450a-bcfd-409af5eadceb",
+        "description": "Studio turnaround in grey tailored waistcoat, frontal portrait with shaggy dark curls and distinct cupid bow red lip."
+      },
+      {
+        "id": "SHEET-03",
+        "url": "https://flow.google.com/project/a0fcb289-e3d1-4393-a212-fcdec03cf902/edit/eb0c8ba0-5bcf-40ca-ba0e-9a06cfcd82d5",
+        "description": "Studio turnaround in black scoop tank top and black fitted jeans, updo curl tendrils, neutral natural lip and authentic bone structure."
+      }
+    ],
     "official_youtube_channel": "https://www.youtube.com/@TransmicSpace",
     "youtube_handle": "@TransmicSpace"
   },
@@ -122,6 +139,18 @@
       "timestamp": "2026-09-25T20:59:34.530409+05:30",
       "category": "OPTIMIZATION",
       "summary": "Deployed Lite YouTube Facade, Skeleton Loading Shimmer, and Universal WebP Suite across banner, 16 thumbnails, posters, and stills reducing cold-open payload by ~88%."
+    },
+    {
+      "id": "EVT-008",
+      "timestamp": "2026-09-26T14:02:00+05:30",
+      "category": "CHARACTER_GROUNDING_ANCHOR",
+      "summary": "Locked 3 authoritative Google Flow character sheets for Sreemoyee Bhattacharya (cc8c459a, 8757d660, eb0c8ba0). Established mandatory grounding invariant for 'Kuch Hasina Ka' and all future Transmic visual productions."
+    },
+    {
+      "id": "EVT-009",
+      "timestamp": "2026-09-27T22:10:00+05:30",
+      "category": "KEY_ART_SUITE_RELEASE",
+      "summary": "Generated and registered complete 20 Global Cinema cinematic poster suite for 'Taar Kata Ektara' (তার কাটা একতারা) in Google Flow Tests project under new collection 'Taar Kata Ektara' inside TRANSMIC. Grounded strictly on Sreemoyee's certified facial invariants across 20 distinct world cinema aesthetics with Venusian divine grace, abundance, completeness, and subtle splendour."
     }
   ],
   "invariants": {
@@ -130,7 +159,8 @@
     "canonical_genesis_release_date": "Canonical genesis release dates must never be overwritten by reissue dates.",
     "master_artwork_anchor": "Master artwork files remain anchored in #ABHIKISM central archive; derivatives live in 03_ASSETS.",
     "statutory_publishing_share": "Transmic Space holds statutory 50.00% publishing share on all collaborative works.",
-    "quicktime_video_invariant": "H.264 (yuv420p) + AAC stereo (48kHz), -movflags +faststart."
+    "quicktime_video_invariant": "H.264 (yuv420p) + AAC stereo (48kHz), -movflags +faststart.",
+    "sreemoyee_grounding_invariant": "Whenever generating visual assets or character representations of Sreemoyee (especially for 'Kuch Hasina Ka' or Transmic productions), ONLY the three verified Google Flow character sheets (cc8c459a, 8757d660, eb0c8ba0) may be used as grounding references. All other previous ungrounded depictions are rejected."
   },
   "workspace_metrics": {
     "file_distribution": {
